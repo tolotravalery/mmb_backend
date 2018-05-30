@@ -20,6 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('popups', 'PopupController');
 Route::resource('events', 'EventController');
+Route::resource('landings', 'LandingController');
 Route::get('/test',function(){
     return view('template');
 });

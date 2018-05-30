@@ -38,6 +38,12 @@
                     <span class="nav-link-text">Events</span>
                 </a>
             </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+                <a class="nav-link" href="{{url('/landings')}}">
+                    <i class="fa fa-fw fa-camera"></i>
+                    <span class="nav-link-text">Landing</span>
+                </a>
+            </li>
         </ul>
         <ul class="navbar-nav sidenav-toggler">
             <li class="nav-item">

@@ -61,8 +61,8 @@ class EventController extends Controller
         $filename1 = $image1->getClientOriginalExtension();
         $image2 = $request->file('path2');
         $filename2 = $image2->getClientOriginalExtension();
-        $input['path'] = time() . '.' . $image1->getClientOriginalExtension();
-        $input['path2'] = time() . '.' . $image2->getClientOriginalExtension();
+        $input['path'] = "image_1".time() . '.' . $image1->getClientOriginalExtension();
+        $input['path2'] = "image_2".time() . '.' . $image2->getClientOriginalExtension();
         $destinationPath = public_path('../../html/public/events');
         $image1->move($destinationPath, $input['path']);
         $image2->move($destinationPath, $input['path2']);
