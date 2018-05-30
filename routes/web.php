@@ -21,6 +21,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('popups', 'PopupController');
 Route::resource('events', 'EventController');
 Route::resource('landings', 'LandingController');
+Route::resource('galleries', 'GallerieController');
+Route::resource('imagegalleries', 'ImagegallerieController');
 Route::get('/test',function(){
     return view('template');
+});
+Route::get('/test1',function(){
+    mkdir('../../html/public/gfx/content/gallery/huhu');
 });
